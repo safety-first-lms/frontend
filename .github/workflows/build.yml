@@ -39,3 +39,9 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
+          scripts: |
+            mkdir app
+            cd app
+            git clone git@github.com:safety-first-lms/frontend.git
+
+
