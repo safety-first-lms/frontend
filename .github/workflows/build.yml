@@ -39,8 +39,3 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          script: |
-            docker pull ghcr.io/safety-first-lms/frontend:latest
-            docker stop safety-first
-            docker rm safety-first
-            docker run -d --name safety-first -p 80:80 ghcr.io/safety-first-lms/frontend:latest
