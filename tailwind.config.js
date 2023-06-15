@@ -1,7 +1,8 @@
-module.export = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
     './index.html',
-    './src/**/*.{vue,js,ts,jsx,tsx}',
+    './src/**/*.{html,vue,js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -13,10 +14,13 @@ module.export = {
         'charcoal': '#1D1D1D',
         'soft-peach': '#F1E1DE',
         'light-grey': '#EBECED',
+        'soft-blue': '#ECF1F4'
       },
     },
     variants: {},
-    plugins: [],
+    plugins: [
+
+    ]
   }
 };
 
