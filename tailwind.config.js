@@ -14,7 +14,9 @@ export default {
         'charcoal': '#1D1D1D',
         'soft-peach': '#F1E1DE',
         'light-grey': '#EBECED',
-        'soft-blue': '#ECF1F4'
+        'soft-blue': '#ECF1F4',
+        'cool-grey':'#BBBBBB',
+        'steel-grey':'#7A7A7A'
       },
     },
     variants: {},
