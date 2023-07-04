@@ -7,7 +7,7 @@ const auth = useAuth();
 <template>
   <div class="w-full flex h-screen">
     <Sidebar v-if="auth.isAuthorized"/>
-    <div class="bg-[#F9FAFA] px-[48px] py-6 ml-[450px] flex-grow">
+    <div class="bg-[#F9FAFA] ml-[379px] px-[48px] py-6 flex-grow">
       <router-view/>
     </div>
   </div>

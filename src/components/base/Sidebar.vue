@@ -1,23 +1,105 @@
 <template>
-  <div class="h-screen w-[379px] bg-white fixed top-0 left-0 overflow-y-auto y-6">
+  <div class="h-screen w-[379px] bg-white absolute top-0 left-0 overflow-y-auto y-6">
+    <img src="/images/logo.png" class="w-[88px] h-[38px] mx-8 mt-6"/>
     <ul class="list-none mt-10 px-6">
       <li class="my-3">
-        <router-link active-class="text-bright-green bg-soft-blue" to="/profile" class="block py-2.5 px-4 rounded transition duration-200 text-charcoal hover:bg-soft-blue hover:text-bright-green">Profile</router-link>
+        <router-link active-class="text-bright-green bg-soft-blue" to="/profile" class="flex items-center py-2.5 px-4 rounded transition duration-200 text-charcoal hover:bg-soft-blue hover:text-bright-green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_186_15121)">
+              <path d="M1.22449 23.0049V7.8506L11.5176 0.273438L21.6828 7.8506V23.0049H14.2027V14.007H8.6726V23.0049H1.22449ZM3.14246 21.1106H6.75463V12.1127H16.1207V21.1106H19.7649V8.79774L11.5176 2.6413L3.14246 8.79774V21.1106Z" fill="#1D1D1D"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_186_15121">
+                <rect width="22.7315" height="22.7315" fill="white" transform="translate(0.277344 0.273438)"/>
+              </clipPath>
+            </defs>
+          </svg>
+          Профиль
+        </router-link>
       </li>
       <li class="my-3">
-        <router-link active-class="text-bright-green bg-soft-blue" to="/courses" class="block py-2.5 px-4 rounded transition duration-200 text-charcoal hover:bg-soft-blue hover:text-bright-green">Courses</router-link>
+        <router-link active-class="text-bright-green bg-soft-blue" to="/courses" class="flex items-center py-2.5 px-4 rounded transition duration-200 text-charcoal hover:bg-soft-blue hover:text-bright-green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_418_13366)">
+              <path d="M2.42832 9.79569H20.8564V7.9014H2.42832V9.79569Z" fill="#131313"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1687 1.40995C18.1688 0.886858 17.7448 0.462701 17.2218 0.46257C16.6987 0.462439 16.2745 0.886385 16.2744 1.40948L16.2741 2.32234H7.01006L7.01029 1.40995C7.01042 0.886858 6.58647 0.462701 6.06338 0.46257C5.54028 0.46244 5.11613 0.886385 5.116 1.40948L5.11577 2.32234H3.2736C1.72341 2.32234 0.466736 3.57901 0.466736 5.1292V20.0069C0.466736 21.5571 1.72341 22.8138 3.2736 22.8138H20.011C21.5612 22.8138 22.8179 21.5571 22.8179 20.0069V5.1292C22.8179 3.57901 21.5612 2.32234 20.011 2.32234H18.1684L18.1687 1.40995ZM16.2737 4.21663L16.2734 5.12891C16.2733 5.65201 16.6973 6.07616 17.2204 6.07629C17.7434 6.07642 18.1676 5.65248 18.1677 5.12938L18.168 4.21663H20.011C20.515 4.21663 20.9236 4.6252 20.9236 5.1292V20.0069C20.9236 20.5109 20.515 20.9195 20.011 20.9195H3.2736C2.7696 20.9195 2.36103 20.5109 2.36103 20.0069V5.1292C2.36103 4.6252 2.7696 4.21663 3.2736 4.21663H5.11529L5.11507 5.12891C5.11494 5.65201 5.53888 6.07616 6.06198 6.07629C6.58507 6.07642 7.00923 5.65248 7.00936 5.12938L7.00958 4.21663H16.2737Z" fill="#131313"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_418_13366">
+                <rect width="22.7315" height="22.7315" fill="white" transform="translate(0.277344 0.273193)"/>
+              </clipPath>
+            </defs>
+          </svg>
+          Курсы
+        </router-link>
       </li>
       <li class="my-3">
-        <router-link active-class="text-bright-green bg-soft-blue" to="/progress" class="block py-2.5 px-4 rounded transition duration-200 text-charcoal hover:bg-soft-blue hover:text-bright-green">Progress</router-link>
+        <router-link active-class="text-bright-green bg-soft-blue" to="/progress" class="flex items-center py-2.5 px-4 rounded transition duration-200 text-charcoal hover:bg-soft-blue hover:text-bright-green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_418_13358)">
+              <path d="M5.1171 12.0538C5.1171 11.5307 5.54115 11.1066 6.06424 11.1066H17.2254C17.7485 11.1066 18.1725 11.5307 18.1725 12.0538C18.1725 12.5769 17.7485 13.0009 17.2254 13.0009H6.06424C5.54115 13.0009 5.1171 12.5769 5.1171 12.0538Z" fill="#131313"/>
+              <path d="M6.06424 14.8271C5.54115 14.8271 5.1171 15.2512 5.1171 15.7743C5.1171 16.2974 5.54115 16.7214 6.06424 16.7214H10.7147C11.2378 16.7214 11.6619 16.2974 11.6619 15.7743C11.6619 15.2512 11.2378 14.8271 10.7147 14.8271H6.06424Z" fill="#131313"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.466736 5.5773C0.466736 4.00802 1.73889 2.73587 3.30817 2.73587H19.9816C21.5509 2.73587 22.8231 4.00803 22.8231 5.57731V18.5304C22.8231 20.0997 21.5509 21.3718 19.9816 21.3718H3.30817C1.73889 21.3718 0.466736 20.0997 0.466736 18.5304V5.5773ZM3.30817 4.63016C2.78508 4.63016 2.36103 5.05421 2.36103 5.5773V18.5304C2.36103 19.0535 2.78508 19.4776 3.30817 19.4776H19.9816C20.5047 19.4776 20.9288 19.0535 20.9288 18.5304V5.57731C20.9288 5.05421 20.5047 4.63016 19.9816 4.63016H3.30817Z" fill="#131313"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_418_13358">
+                <rect width="22.7315" height="22.7315" fill="white" transform="translate(0.277344 0.273193)"/>
+              </clipPath>
+            </defs>
+          </svg>
+          Прогресс
+        </router-link>
       </li>
       <li class="my-3">
-        <router-link active-class="text-bright-green bg-soft-blue" to="/homeworks" class="block py-2.5 px-4 rounded transition duration-200 text-charcoal hover:bg-soft-blue hover:text-bright-green">Homeworks</router-link>
+        <router-link active-class="text-bright-green bg-soft-blue" to="/homeworks" class="flex items-center py-2.5 px-4 rounded transition duration-200 text-charcoal hover:bg-soft-blue hover:text-bright-green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_223_13213)">
+              <path d="M2.42825 9.7957H20.8563V7.90141H2.42825V9.7957Z" fill="#1D1D1D"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1686 1.40997C18.1687 0.886874 17.7448 0.462716 17.2217 0.462585C16.6986 0.462455 16.2744 0.8864 16.2743 1.40949L16.2741 2.32235H7.01L7.01023 1.40997C7.01036 0.886873 6.58641 0.462716 6.06332 0.462585C5.54022 0.462455 5.11607 0.8864 5.11594 1.40949L5.11571 2.32235H3.27354C1.72335 2.32235 0.466675 3.57903 0.466675 5.12921V20.0069C0.466675 21.5571 1.72335 22.8138 3.27354 22.8138H20.011C21.5612 22.8138 22.8178 21.5571 22.8178 20.0069V5.12921C22.8178 3.57903 21.5612 2.32235 20.011 2.32235H18.1684L18.1686 1.40997ZM16.2736 4.21664L16.2734 5.12893C16.2733 5.65202 16.6972 6.07618 17.2203 6.07631C17.7434 6.07644 18.1675 5.65249 18.1677 5.1294L18.1679 4.21664H20.011C20.515 4.21664 20.9236 4.62521 20.9236 5.12921V20.0069C20.9236 20.5109 20.515 20.9195 20.011 20.9195H3.27354C2.76954 20.9195 2.36096 20.5109 2.36096 20.0069V5.12921C2.36096 4.62521 2.76954 4.21664 3.27354 4.21664H5.11523L5.11501 5.12893C5.11488 5.65202 5.53882 6.07618 6.06191 6.07631C6.58501 6.07644 7.00917 5.65249 7.0093 5.1294L7.00952 4.21664H16.2736Z" fill="#1D1D1D"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_223_13213">
+                <rect width="22.7315" height="22.7315" fill="white" transform="translate(0.277344 0.273193)"/>
+              </clipPath>
+            </defs>
+          </svg>
+          Домашка
+        </router-link>
       </li>
       <li class="my-3">
-        <router-link active-class="text-bright-green bg-soft-blue" to="/chats" class="block py-2.5 px-4 rounded transition duration-200 text-charcoal hover:bg-soft-blue hover:text-bright-green">Chats</router-link>
+        <router-link active-class="text-bright-green bg-soft-blue" to="/chats" class="flex items-center py-2.5 px-4 rounded transition duration-200 text-charcoal hover:bg-soft-blue hover:text-bright-green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_223_13218)">
+              <path d="M22.5378 0.739998C22.9077 1.10988 22.9077 1.70958 22.5378 2.07946L14.7091 9.90818L8.5728 3.77191L2.08355 10.2612C1.71367 10.631 1.11397 10.631 0.744087 10.2612C0.374204 9.89128 0.374204 9.29158 0.744087 8.92169L8.5728 1.09298L14.7091 7.22925L21.1983 0.739998C21.5682 0.370115 22.1679 0.370115 22.5378 0.739998Z" fill="#1D1D1D"/>
+              <path d="M2.43652 17.8488C2.95961 17.8488 3.38366 18.2728 3.38366 18.7959V21.8641C3.38366 22.3871 2.95961 22.8112 2.43652 22.8112C1.91342 22.8112 1.48937 22.3871 1.48937 21.8641V18.7959C1.48937 18.2728 1.91342 17.8488 2.43652 17.8488Z" fill="#1D1D1D"/>
+              <path d="M9.52001 11.6367C9.52001 11.1136 9.09596 10.6896 8.57287 10.6896C8.04977 10.6896 7.62572 11.1136 7.62572 11.6367V21.8639C7.62572 22.387 8.04977 22.811 8.57287 22.811C9.09596 22.811 9.52001 22.387 9.52001 21.8639V11.6367Z" fill="#1D1D1D"/>
+              <path d="M14.7091 17.8488C15.2322 17.8488 15.6562 18.2728 15.6562 18.7959V21.8641C15.6562 22.3871 15.2322 22.8112 14.7091 22.8112C14.186 22.8112 13.7619 22.3871 13.7619 21.8641V18.7959C13.7619 18.2728 14.186 17.8488 14.7091 17.8488Z" fill="#1D1D1D"/>
+              <path d="M21.7924 11.6367C21.7924 11.1136 21.3684 10.6896 20.8453 10.6896C20.3222 10.6896 19.8981 11.1136 19.8981 11.6367V21.8639C19.8981 22.387 20.3222 22.811 20.8453 22.811C21.3684 22.811 21.7924 22.387 21.7924 21.8639V11.6367Z" fill="#1D1D1D"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_223_13218">
+                <rect width="22.7315" height="22.7315" fill="white" transform="translate(0.277344 0.273193)"/>
+              </clipPath>
+            </defs>
+          </svg>
+          Чаты
+        </router-link>
       </li>
     </ul>
   </div>
 </template>
 <script lang="ts" setup>
 </script>
+<style lang="scss" scoped>
+a{
+  &:hover{
+    path{
+      fill: #00B14E;
+    }
+  }
+}
+svg{
+  margin-right: 16px;
+}
+
+</style>

@@ -1,14 +1,14 @@
 <template>
-  <div class="w-full flex flex-col">
+  <div class="max-w-full flex flex-col">
     <h6>Курсы</h6>
-    <div class="flex gap-[13px] mt-6">
+    <div class="flex flex-wrap gap-[13px] mt-6">
       <div v-for="(course, index) in courses" :key="index" class="card flex items-start justify-between">
         <div class="h-full flex justify-between flex-col">
           <div class="flex flex-col">
             <h4 class="text-white course-title">{{  course.title }}</h4>
             <p class="text-white course-subtitle max-w-[189px] mt-4">На рассвете 6 февраля в Турции произошла</p>
           </div>
-          <button class="bg-white rounded-[10px] text-[#1D1D1D] font-semibold text-base max-w-[173px] h-[45px] mb-[15px]">Подробнее</button>
+          <router-link :to="`/courses/${course.id}`" class="bg-white rounded-[10px] text-[#1D1D1D] font-semibold text-base max-w-[173px] h-[45px] flex justify-center items-center mb-[15px] text-center">Подробнее</router-link>
         </div>
         <div v-if="course.type === 'Main'" class="course-tag text-white text-base font-semibold">Важна</div>
       </div>
@@ -37,7 +37,7 @@ onMounted(() =>{
   getCourses();
 });
 </script>
-<style langs="scss" scoped>
+<style lang="scss" scoped>
 h6{
   font-size: 20px;
   font-style: normal;
@@ -46,15 +46,12 @@ h6{
   letter-spacing: -0.4px;
 }
 .card{
-  width: 100%;
+  min-width: 461px;
   max-width: 461px;
   height: 286px;
-  background: #869667;
   border-radius: 10px;
   padding: 24px;
-  background-image: url(../../public/images/course.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
+  background: #869667 url(../../public/images/course.png) no-repeat bottom right;
 }
 
 .course-title{
